@@ -2,11 +2,76 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <style>
+
+            .topnav{
+                overflow: hidden;
+                background-color: rgb(187, 48, 76);
+            }
+
+            .topnav a{
+                float: right;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+                color: black;
+                margin: 8px;
+                border-radius: 10px;
+            }    
+            
+            .topnav a:hover{
+                background-color: #ddd;
+                color: black;
+            }
+
+            .topnav a.active{
+                float: left;
+                background-color: #ddd;
+                color: black;
+            }
+
+            .center{
+                margin-left: auto;
+                margin-right: auto;
+                   
+
+            }
+
+            .center input.searchnav {
+                border-radius: 25px;
+                width: 30%;
+                padding: 10px 15px;
+                margin-top: 14%;
+                margin-left: 35%;
+            }
+
+            .center input.search{
+                border-radius: 25px;
+                padding: 10px;
+                margin-left: 46%;
+                width: 10%;
+                
+            }
+
+        </style>
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+               
+        <div class="topnav">
+            <a href="advance.html">Advance search</a>
+            <a href="image.html">Image search</a>
+            <a class="active">Home</a>
+        </div>
+        
+        <div class="center">
+            <form action="https://google.com/search">
+                <input type="text" name="q" class="searchnav" placeholder="Type here to search">
+                <br></br>
+                <input type="submit" value="Search" class="search">
+            </form>
+        </div>
+        
     </body>
 </html>
