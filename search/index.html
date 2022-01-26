@@ -6,7 +6,8 @@
 
             .topnav{
                 overflow: hidden;
-                background-color: rgb(187, 48, 76);
+                /* background-color: rgb(184, 41, 69); */
+                
             }
 
             .topnav a{
@@ -16,7 +17,7 @@
                 text-decoration: none;
                 font-size: 17px;
                 display: block;
-                color: black;
+                color: #ddd;
                 margin: 8px;
                 border-radius: 10px;
             }    
@@ -27,49 +28,60 @@
             }
 
             .topnav a.active{
-                float: left;
                 background-color: #ddd;
                 color: black;
             }
 
-            .center{
-                margin-left: auto;
-                margin-right: auto;
-                   
-
-            }
-
-            .center input.searchnav {
+            input.searchnav{
                 border-radius: 25px;
                 width: 30%;
                 padding: 10px 15px;
-                margin-top: 14%;
-                margin-left: 35%;
+                margin-left: 34%;
+                border: #ddd;  
+
             }
 
-            .center input.search{
-                border-radius: 25px;
+            input.search{
+                border-radius: 5px;
                 padding: 10px;
-                margin-left: 46%;
+                margin-left: 45%;
                 width: 10%;
-                
+                background-color: rgb(53, 51, 51);
+                border: #ddd;  
+                color: #ddd;
             }
+
+            input.search:hover{
+                background-color: rgb(50, 61, 70);    
+            }
+
+            img{
+                margin-left: 30%;
+            }
+
+            body{
+                background-color: #202124;
+            }
+        
 
         </style>
     </head>
     <body>
                
         <div class="topnav">
-            <a href="advance.html">Advance search</a>
             <a href="image.html">Image search</a>
             <a class="active">Home</a>
         </div>
+
+        <div>
+            <img src="Google.png" >
+        </div>
         
-        <div class="center">
+        <div>
             <form action="https://google.com/search">
                 <input type="text" name="q" class="searchnav" placeholder="Type here to search">
                 <br></br>
-                <input type="submit" value="Search" class="search">
+                <input type="submit" value="Google Search" class="search">
             </form>
         </div>
         
